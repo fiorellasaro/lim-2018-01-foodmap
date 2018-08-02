@@ -1,3 +1,30 @@
+*{
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+#splashcontainer{
+width: 100%;
+height: 100%;
+background: #1B2021;
+z-index: 1;
+top:0;
+left:0;
+position: fixed;
+}
+
+#splash{
+  font-family: 'Hammersmith One', sans-serif;
+  color: #F06449;
+  text-align: center;
+  margin-top:50%;
+  font-size: 3em;
+}
+
+#mapStyle{
+  color: #EDE6E3;
+  text-align: center;
+}
+
 .userAdress{
   width: 100%;
   border: 1px solid #272932;
@@ -5,13 +32,17 @@
   font-size: 1.5em;
 }
 
-.map-container{
-  width: 80%;
+#map{
+  width:80%;
+  height: 200px;
   margin-left: 10%;
+  margin-top: 10%;
+}
+  /* margin-left: 10%;
   border: 1px solid #272932;
   text-align: center;
-  margin-top: 1em;
-}
+  margin-top: 1em; */
+
 
 .restaurantsNum{
   font-size: 1.2em;
@@ -29,7 +60,7 @@
   margin-left: 12.5%;
 }
 
-.searchInput, .restaurant{
+#searchInput, .restaurant{
   width: 75%;
   margin: 0;
   float: left;
@@ -54,5 +85,46 @@
 
 .searchIcon{
   width: 0.8em;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  padding-top: 50%; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color:rgb(65, 157, 120);
+  background-color: rgba(65, 157, 120, 0.4);
+  
+}
+
+/* Modal Content */
+.modal-content {
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #F06449;
+  text-decoration: none;
+  cursor: pointer;
 }
 
