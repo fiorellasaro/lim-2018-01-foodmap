@@ -9,62 +9,24 @@
     <link href="https://fonts.googleapis.com/css?family=Asap+Condensed|Hammersmith+One" rel="stylesheet">
 </head>
 <body>
-    <header class="userAdress">Te encuentras en: *Dirección</header>
-    <div id="map"></div>
-    
-    <h2 class="restaurantsNum">¡ #número restaurantes cerca de ti!</h2>
+    <header id="userAddress"> <p id="text">Me encuentro en:</p></header>
+
+    <div id="resultsContainer"></div>
     <div class="search">
       <input type="search" name="buscador" id="searchInput" placeholder="filtrar restaurantes">
-      <button class="searchButton"><img src="img/search.png" alt="search icon" class="searchIcon"></button>
+      <button class="searchButton" id="searchBy"><img src="img/search.png" alt="search icon" class="searchIcon"></button>
     </div>
-    <div class="list-container">
-      <p class="restaurant">#número *Nombre de restaurant*</p>
-      <button class="infoButton" id="restaurantInfo">Saber + </button>
-    </div> 
 
+    <div id="map"></div>
+
+    <div id="listContainer"></div> 
+
+    <div id="infoModalContainer"></div>
   
-  <div id="infoModal" class="modal">
-
-        
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>information</p>
-        </div>
-      
-  </div>
-
-
-
-    
-
-  
-<!--    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-      let activatePlacesSearch = () =>{
-        let input = document.getElementById('searchInput');
-        let autocomplete = new google.maps.places.autocomplete(input);
-      }
-      
-    </script>  -->
-
-
-
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ128ZCfVKaXpGOZNz-cm7y7V_Suo7JC4&libraries=places"
     ></script>
     <script src="main.js"></script> 
-    <script src="localization.js"></script>
-   
-   
-
-   <!--  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ128ZCfVKaXpGOZNz-cm7y7V_Suo7JC4&libraries=places&callback=activatePlacesSearch"></script> -->
-   
-    
+    <script src="localization.js"></script>   
 </body>
 </html> 
 

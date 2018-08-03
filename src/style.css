@@ -2,6 +2,10 @@
   font-family: 'Asap Condensed', sans-serif;
 }
 
+body{
+  margin: 0;
+}
+
 #splashcontainer{
 width: 100%;
 height: 100%;
@@ -25,17 +29,35 @@ position: fixed;
   text-align: center;
 }
 
-.userAdress{
+#userAddress{
   width: 100%;
-  border: 1px solid #272932;
-  /* background: #588B8B; */
+  background: #272932; 
+}
+
+
+header{
+  height: 20%;
+}
+
+#myAddress, #text{
+  text-align: center;
+  margin-top: 0;
+}
+
+#myAddress{
+  color: #EDE6E3;
+  font-size: 1em;
+}
+
+#text{
   font-size: 1.5em;
+  color: #F06449;  
 }
 
 #map{
-  width:80%;
-  height: 200px;
-  margin-left: 10%;
+  width:90%;
+  height: 300px;
+  margin-left: 5%;
   margin-top: 10%;
 }
   /* margin-left: 10%;
@@ -49,7 +71,7 @@ position: fixed;
   text-align: center;
 }
 
-.search, .list-container{
+.search, #listContainer{
   overflow: auto;
   margin-top: 0.7em;
   
@@ -58,33 +80,60 @@ position: fixed;
 
 .search{
   margin-left: 12.5%;
+  width: 80%;
+  height: 2em;
+}
+.restaurantContainer{
+  border: 1px solid #a4a7b6; 
+  margin-bottom: 0.7em;
+  height: 40px;
+  width: 90%;
+  padding: 0;
+  margin-left: 5%;
 }
 
 #searchInput, .restaurant{
-  width: 75%;
   margin: 0;
   float: left;
-  border: 1px solid #272932;
+  padding: 0;
 }
 
-/* .restaurant{
+#searchInput{
+  width: 90%;
+  height: 100%;
 }
- */
+
+.searchButton{
+  width: 10%;
+  height: 20px;
+  
+}
+
+.restaurant{
+  text-align: center;
+  width: 80%;
+}
+
 .searchButton, .infoButton{
   margin: 0;
   float: left;
   height: 100%;
-  background: #588B8B; 
-  border: 1px solid #272932;
-    
+  background: #F06449; 
+  border: none;
 }
 
 .infoButton{
-  height: 20px;
+  width: 20%;
 } 
 
 .searchIcon{
   width: 0.8em;
+}
+
+.closeButton{
+  width: 1.2em;
+  margin-left: 90%;
+  margin-top: 0.5em;
 }
 
 
@@ -99,32 +148,31 @@ position: fixed;
   width: 100%; 
   height: 100%; 
   overflow: auto; 
-  background-color:rgb(65, 157, 120);
-  background-color: rgba(65, 157, 120, 0.4);
+  background-color:rgb(39, 41, 50);
+  background-color: rgba(39, 41, 50, 0.8);
   
 }
 
 /* Modal Content */
-.modal-content {
+.modalContent {
   margin: auto;
-  padding: 20px;
+  height: 40%;
   width: 80%;
-  border-radius: 10px;
+/*   border-radius: 10px; */
   background-color: white;
 }
 
 
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.name{
+  font-size: 1.5em;
+  text-align: center;
 }
 
-.close:hover,
-.close:focus {
-  color: #F06449;
-  text-decoration: none;
-  cursor: pointer;
+.infoContent{
+  width: 90%;
+  margin-left: 5%;
+  text-align: left;
+  
 }
+
 

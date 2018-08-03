@@ -1,5 +1,3 @@
-
-
 class Localizacion {
   constructor (callback){
     if(navigator.geolocation){
@@ -15,8 +13,3 @@ class Localizacion {
       }
     }
 }
-
-/* 
-let ubicacion = new Localizacion();
-console.log(ubicacion);
-  */
